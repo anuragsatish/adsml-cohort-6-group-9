@@ -6,6 +6,8 @@
 
 - Create a private branch before merging to main branch
 > *git checkout -b <branch-name>*
+
+
 ```
 Example: git checkout -b add-learning-rate
 ```
