@@ -1,0 +1,264 @@
+{
+  "data": [
+    {
+      "title": "Solar_System_Revised",
+      "paragraphs": [
+        {
+          "context": "The Solar System is a gravitationally bound system comprising the Sun and the objects that orbit it, either directly or indirectly. The eight planets\u2014Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune\u2014revolve around the Sun in elliptical orbits. The four inner planets (Mercury, Venus, Earth, and Mars) are rocky and smaller, while the four outer planets (Jupiter, Saturn, Uranus, and Neptune) are much larger and composed primarily of gases and ices. The asteroid belt, located between Mars and Jupiter, contains numerous irregularly shaped bodies. The Solar System also includes dwarf planets like Pluto, moons orbiting the planets, and small bodies such as comets and meteoroids. The Sun, a nearly perfect sphere of hot plasma, serves as the primary energy source for life on Earth. It accounts for over 99% of the total mass of the Solar System.",
+          "qas": [
+            {
+              "id": "Solar_System_Revised_a_0",
+              "question": "What is the Sun's role in the Solar System?",
+              "answers": [
+                {
+                  "text": "It is the primary energy source and contains over 99% of the system's mass.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_a_1",
+              "question": "How many planets are there in the Solar System?",
+              "answers": [
+                {
+                  "text": "Eight",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_a_2",
+              "question": "What type of orbits do the planets follow?",
+              "answers": [
+                {
+                  "text": "Elliptical orbits",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_a_3",
+              "question": "Which planets are considered rocky?",
+              "answers": [
+                {
+                  "text": "Mercury, Venus, Earth, and Mars",
+                  "answer_start": 285
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_a_4",
+              "question": "Which planets are classified as gas or ice giants?",
+              "answers": [
+                {
+                  "text": "Jupiter, Saturn, Uranus, and Neptune",
+                  "answer_start": 179
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_a_5",
+              "question": "Where is the asteroid belt located?",
+              "answers": [
+                {
+                  "text": "Between Mars and Jupiter",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_a_6",
+              "question": "What type of star is the Sun?",
+              "answers": [
+                {
+                  "text": "A nearly perfect sphere of hot plasma",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_a_7",
+              "question": "What is Pluto classified as?",
+              "answers": [
+                {
+                  "text": "A dwarf planet",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_a_8",
+              "question": "What lies between the inner and outer planets?",
+              "answers": [
+                {
+                  "text": "The asteroid belt",
+                  "answer_start": 467
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_a_9",
+              "question": "What orbits the planets besides dwarf planets?",
+              "answers": [
+                {
+                  "text": "Moons",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_s_0",
+              "question": "Why is the Sun important to life on Earth?",
+              "answers": [
+                {
+                  "text": "It provides the primary energy source for life.",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_s_1",
+              "question": "Which group includes Jupiter and Saturn?",
+              "answers": [
+                {
+                  "text": "Gas giants",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_s_2",
+              "question": "Why are the outer planets larger than the inner ones?",
+              "answers": [
+                {
+                  "text": "They are composed mostly of gases and ices.",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_s_3",
+              "question": "What objects, besides planets, orbit the Sun?",
+              "answers": [
+                {
+                  "text": "Moons, asteroids, comets, and meteoroids",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_s_4",
+              "question": "How are inner planets different from outer planets?",
+              "answers": [
+                {
+                  "text": "Inner planets are rocky and smaller.",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_s_5",
+              "question": "What lies in the region between Mars and Jupiter?",
+              "answers": [
+                {
+                  "text": "The asteroid belt",
+                  "answer_start": 467
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_s_6",
+              "question": "What is a key feature of the Solar System\u2019s layout?",
+              "answers": [
+                {
+                  "text": "Objects orbit the Sun directly or indirectly.",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_s_7",
+              "question": "What separates terrestrial planets from gas giants?",
+              "answers": [
+                {
+                  "text": "The asteroid belt",
+                  "answer_start": 467
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_s_8",
+              "question": "Which planets lie closest to the Sun?",
+              "answers": [
+                {
+                  "text": "Mercury, Venus, Earth, and Mars",
+                  "answer_start": 285
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_s_9",
+              "question": "What do small Solar System bodies include?",
+              "answers": [
+                {
+                  "text": "Comets and meteoroids",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Solar_System_Revised_n_0",
+              "question": "Which planet in the Solar System has a wooden surface?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Solar_System_Revised_n_1",
+              "question": "What is the name of the solar subway system?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Solar_System_Revised_n_2",
+              "question": "Who is the mayor of the asteroid belt?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Solar_System_Revised_n_3",
+              "question": "Which gas giant was discovered through infrared sound?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Solar_System_Revised_n_4",
+              "question": "What is the license plate number of Pluto?",
+              "answers": [],
+              "is_impossible": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

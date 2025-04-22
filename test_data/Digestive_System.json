@@ -1,0 +1,264 @@
+{
+  "data": [
+    {
+      "title": "Digestive_System_Revised",
+      "paragraphs": [
+        {
+          "context": "The human digestive system is a complex series of organs and glands that processes food. It begins in the mouth, where food is chewed and mixed with saliva to begin the breakdown process. From there, food passes through the esophagus into the stomach, where gastric juices further digest it. The partially digested food moves into the small intestine, where most nutrient absorption occurs with the help of enzymes from the pancreas and bile from the liver. The liver produces bile, which is stored in the gallbladder and released as needed to digest fats. Water and remaining nutrients are absorbed in the large intestine. Finally, waste is expelled through the rectum and anus. The entire process is essential for converting food into energy and nutrients for the body.",
+          "qas": [
+            {
+              "id": "Digestive_System_Revised_a_0",
+              "question": "Where does digestion begin?",
+              "answers": [
+                {
+                  "text": "In the mouth",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_a_1",
+              "question": "What is the role of the stomach in digestion?",
+              "answers": [
+                {
+                  "text": "It uses gastric juices to break down food",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_a_2",
+              "question": "Which organ absorbs most nutrients?",
+              "answers": [
+                {
+                  "text": "The small intestine",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_a_3",
+              "question": "Which organ produces bile?",
+              "answers": [
+                {
+                  "text": "The liver",
+                  "answer_start": 458
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_a_4",
+              "question": "Where is bile stored before being used?",
+              "answers": [
+                {
+                  "text": "The gallbladder",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_a_5",
+              "question": "What helps digest fats in the small intestine?",
+              "answers": [
+                {
+                  "text": "Bile",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_a_6",
+              "question": "Which organ follows the esophagus?",
+              "answers": [
+                {
+                  "text": "The stomach",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_a_7",
+              "question": "Where is water absorbed in the digestive system?",
+              "answers": [
+                {
+                  "text": "The large intestine",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_a_8",
+              "question": "What is the final part of the digestive process?",
+              "answers": [
+                {
+                  "text": "The rectum and anus",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_a_9",
+              "question": "What is the function of saliva in digestion?",
+              "answers": [
+                {
+                  "text": "It begins the breakdown of food in the mouth",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_s_0",
+              "question": "Why is the small intestine important?",
+              "answers": [
+                {
+                  "text": "It absorbs most nutrients from digested food",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_s_1",
+              "question": "What happens to food in the stomach?",
+              "answers": [
+                {
+                  "text": "It is broken down by gastric juices",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_s_2",
+              "question": "What happens after food leaves the mouth?",
+              "answers": [
+                {
+                  "text": "It travels down the esophagus to the stomach",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_s_3",
+              "question": "What is the function of the liver in digestion?",
+              "answers": [
+                {
+                  "text": "It produces bile to aid fat digestion",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_s_4",
+              "question": "How does bile help in digestion?",
+              "answers": [
+                {
+                  "text": "It breaks down fats",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_s_5",
+              "question": "Where is waste processed before excretion?",
+              "answers": [
+                {
+                  "text": "In the large intestine",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_s_6",
+              "question": "How are fats digested?",
+              "answers": [
+                {
+                  "text": "With the help of bile from the liver",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_s_7",
+              "question": "What connects the stomach to the small intestine?",
+              "answers": [
+                {
+                  "text": "The pyloric sphincter",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_s_8",
+              "question": "Which fluid aids in breaking down proteins and carbohydrates?",
+              "answers": [
+                {
+                  "text": "Enzymes and gastric juices",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_s_9",
+              "question": "Why is the digestive system essential?",
+              "answers": [
+                {
+                  "text": "It converts food into energy and nutrients",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Digestive_System_Revised_n_0",
+              "question": "Which tooth controls stomach functions?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Digestive_System_Revised_n_1",
+              "question": "Where is the Wi-Fi receiver located in the intestine?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Digestive_System_Revised_n_2",
+              "question": "How many USB ports are there in the pancreas?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Digestive_System_Revised_n_3",
+              "question": "What is the keyboard shortcut for digestion?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Digestive_System_Revised_n_4",
+              "question": "Which ear is responsible for bile production?",
+              "answers": [],
+              "is_impossible": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

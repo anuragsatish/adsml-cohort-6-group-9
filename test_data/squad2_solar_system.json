@@ -1,0 +1,265 @@
+{
+  "version": "v2.0",
+  "data": [
+    {
+      "title": "Solar System",
+      "paragraphs": [
+        {
+          "context": "The solar system consists of the Sun and the astronomical objects gravitationally bound in orbit around it, including eight planets, their moons, dwarf planets, asteroids, and comets. The planets in order from the Sun are: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Each planet has unique characteristics. Jupiter is the largest planet, while Mercury is the smallest. Earth is the only known planet to support life. The asteroid belt lies between Mars and Jupiter. Dwarf planets, such as Pluto and Ceres, are also part of the solar system. Moons orbit most of the planets, with Jupiter and Saturn having the most. Comets are icy bodies that release gas and dust, forming a glowing coma and tail as they approach the Sun.",
+          "qas": [
+            {
+              "id": "direct2-1",
+              "question": "What does the solar system consist of?",
+              "answers": [
+                {
+                  "text": "The Sun and the astronomical objects gravitationally bound in orbit around it.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct2-2",
+              "question": "How many planets are there in the solar system?",
+              "answers": [
+                {
+                  "text": "Eight.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct2-3",
+              "question": "Which planet is the largest?",
+              "answers": [
+                {
+                  "text": "Jupiter.",
+                  "answer_start": 480
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct2-4",
+              "question": "Which planet is the smallest?",
+              "answers": [
+                {
+                  "text": "Mercury.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct2-5",
+              "question": "Which planet supports life?",
+              "answers": [
+                {
+                  "text": "Earth.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct2-6",
+              "question": "Where is the asteroid belt located?",
+              "answers": [
+                {
+                  "text": "Between Mars and Jupiter.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct2-7",
+              "question": "What are examples of dwarf planets?",
+              "answers": [
+                {
+                  "text": "Pluto and Ceres.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct2-8",
+              "question": "Which planets have the most moons?",
+              "answers": [
+                {
+                  "text": "Jupiter and Saturn.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct2-9",
+              "question": "What are comets made of?",
+              "answers": [
+                {
+                  "text": "Icy bodies that release gas and dust.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct2-10",
+              "question": "What happens to comets as they approach the Sun?",
+              "answers": [
+                {
+                  "text": "They form a glowing coma and tail.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect2-1",
+              "question": "What lies between Mars and Jupiter?",
+              "answers": [
+                {
+                  "text": "The asteroid belt.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect2-2",
+              "question": "Which two planets possess the highest number of moons?",
+              "answers": [
+                {
+                  "text": "Jupiter and Saturn.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect2-3",
+              "question": "Describe what happens to a comet near the Sun.",
+              "answers": [
+                {
+                  "text": "It releases gas and dust, forming a glowing coma and tail.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect2-4",
+              "question": "Which celestial bodies in the solar system emit a glowing coma?",
+              "answers": [
+                {
+                  "text": "Comets.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect2-5",
+              "question": "Name any celestial object classified as a dwarf planet.",
+              "answers": [
+                {
+                  "text": "Pluto and Ceres.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect2-6",
+              "question": "Where do you find most of the asteroids?",
+              "answers": [
+                {
+                  "text": "In the asteroid belt.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect2-7",
+              "question": "Which planet has life?",
+              "answers": [
+                {
+                  "text": "Earth.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect2-8",
+              "question": "What is the order of planets from the Sun?",
+              "answers": [
+                {
+                  "text": "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.",
+                  "answer_start": 223
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect2-9",
+              "question": "Which planet is closest to the Sun?",
+              "answers": [
+                {
+                  "text": "Mercury.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect2-10",
+              "question": "Which planet is farthest from the Sun?",
+              "answers": [
+                {
+                  "text": "Neptune.",
+                  "answer_start": 281
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "noanswer2-1",
+              "question": "Who discovered Neptune?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "noanswer2-2",
+              "question": "What is the distance between Earth and Saturn?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "noanswer2-3",
+              "question": "How many comets are in the solar system?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "noanswer2-4",
+              "question": "What is the temperature of the Sun?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "noanswer2-5",
+              "question": "Who was the first to name Pluto?",
+              "answers": [],
+              "is_impossible": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

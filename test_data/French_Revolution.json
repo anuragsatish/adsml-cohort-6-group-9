@@ -1,0 +1,264 @@
+{
+  "data": [
+    {
+      "title": "French_Revolution_Revised",
+      "paragraphs": [
+        {
+          "context": "The French Revolution was a period of major social and political upheaval in France from 1789 to 1799. It began due to widespread economic hardship, social inequality, and a desire for more democratic governance. The storming of the Bastille on July 14, 1789, is often considered the symbolic beginning of the revolution. The revolution led to the end of absolute monarchy and the rise of the French Republic. King Louis XVI and Queen Marie Antoinette were eventually executed. During the radical phase known as the Reign of Terror, thousands were executed by guillotine under the leadership of Robespierre. The revolution significantly influenced global political thought and paved the way for Napoleon Bonaparte\u2019s rise to power.",
+          "qas": [
+            {
+              "id": "French_Revolution_Revised_a_0",
+              "question": "When did the French Revolution begin?",
+              "answers": [
+                {
+                  "text": "1789",
+                  "answer_start": 89
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_a_1",
+              "question": "What event marked the symbolic beginning of the revolution?",
+              "answers": [
+                {
+                  "text": "The storming of the Bastille",
+                  "answer_start": 213
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_a_2",
+              "question": "Who was the king during the French Revolution?",
+              "answers": [
+                {
+                  "text": "King Louis XVI",
+                  "answer_start": 410
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_a_3",
+              "question": "Who led the Reign of Terror?",
+              "answers": [
+                {
+                  "text": "Robespierre",
+                  "answer_start": 595
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_a_4",
+              "question": "What happened to Queen Marie Antoinette?",
+              "answers": [
+                {
+                  "text": "She was executed",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_a_5",
+              "question": "What form of government replaced the monarchy?",
+              "answers": [
+                {
+                  "text": "The French Republic",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_a_6",
+              "question": "What was the Reign of Terror?",
+              "answers": [
+                {
+                  "text": "A radical phase during which thousands were executed by guillotine",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_a_7",
+              "question": "Who came to power after the revolution?",
+              "answers": [
+                {
+                  "text": "Napoleon Bonaparte",
+                  "answer_start": 695
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_a_8",
+              "question": "Why did the revolution start?",
+              "answers": [
+                {
+                  "text": "Due to economic hardship, inequality, and desire for democracy",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_a_9",
+              "question": "What was used for mass executions during the revolution?",
+              "answers": [
+                {
+                  "text": "The guillotine",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_s_0",
+              "question": "Why was the Bastille stormed?",
+              "answers": [
+                {
+                  "text": "It symbolized the tyranny of the monarchy",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_s_1",
+              "question": "How did the revolution impact the monarchy?",
+              "answers": [
+                {
+                  "text": "It led to the end of absolute monarchy",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_s_2",
+              "question": "What was Robespierre known for?",
+              "answers": [
+                {
+                  "text": "Leading the Reign of Terror",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_s_3",
+              "question": "Why was Louis XVI unpopular?",
+              "answers": [
+                {
+                  "text": "Due to his inability to address the country's financial crisis",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_s_4",
+              "question": "How did the revolution influence other countries?",
+              "answers": [
+                {
+                  "text": "It inspired democratic movements worldwide",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_s_5",
+              "question": "What happened during the Reign of Terror?",
+              "answers": [
+                {
+                  "text": "Thousands were executed under Robespierre's leadership",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_s_6",
+              "question": "What changes did the revolution bring?",
+              "answers": [
+                {
+                  "text": "It introduced republicanism and ended feudal privileges",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_s_7",
+              "question": "What role did economic issues play in the revolution?",
+              "answers": [
+                {
+                  "text": "They fueled public discontent",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_s_8",
+              "question": "Who was Napoleon in relation to the revolution?",
+              "answers": [
+                {
+                  "text": "He rose to power afterward",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_s_9",
+              "question": "What did the revolution seek to achieve?",
+              "answers": [
+                {
+                  "text": "Equality, liberty, and fraternity",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "French_Revolution_Revised_n_0",
+              "question": "What was the Wi-Fi password in revolutionary France?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "French_Revolution_Revised_n_1",
+              "question": "How many guillotines were installed in Antarctica?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "French_Revolution_Revised_n_2",
+              "question": "Who was the social media manager of Robespierre?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "French_Revolution_Revised_n_3",
+              "question": "What was Napoleon\u2019s email ID during the war?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "French_Revolution_Revised_n_4",
+              "question": "Which airplane was used to storm the Bastille?",
+              "answers": [],
+              "is_impossible": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

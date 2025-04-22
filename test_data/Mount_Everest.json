@@ -1,0 +1,264 @@
+{
+  "data": [
+    {
+      "title": "Mount_Everest_Revised",
+      "paragraphs": [
+        {
+          "context": "Mount Everest is the tallest mountain on Earth, standing at 8,848 meters above sea level. It is part of the Himalayas and is located on the border between Nepal and the Tibet Autonomous Region of China. Everest attracts climbers from around the world due to its extreme altitude and challenging conditions. The first successful ascent was made in 1953 by Sir Edmund Hillary of New Zealand and Tenzing Norgay, a Sherpa of Nepal. The mountain poses several hazards, including altitude sickness, extreme weather, and the risk of avalanches. Despite these dangers, it remains a symbol of achievement for mountaineers. Base camps on both the Nepalese and Tibetan sides support climbers as they acclimatize before attempting the summit. Everest plays a significant role in Nepal\u2019s tourism industry and has cultural significance for local communities.",
+          "qas": [
+            {
+              "id": "Mount_Everest_Revised_a_0",
+              "question": "How high is Mount Everest?",
+              "answers": [
+                {
+                  "text": "8,848 meters above sea level",
+                  "answer_start": 60
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_a_1",
+              "question": "Where is Mount Everest located?",
+              "answers": [
+                {
+                  "text": "On the border between Nepal and the Tibet Autonomous Region of China",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_a_2",
+              "question": "In which mountain range is Everest found?",
+              "answers": [
+                {
+                  "text": "The Himalayas",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_a_3",
+              "question": "Who first successfully climbed Mount Everest?",
+              "answers": [
+                {
+                  "text": "Sir Edmund Hillary and Tenzing Norgay",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_a_4",
+              "question": "What year was Everest first summited?",
+              "answers": [
+                {
+                  "text": "1953",
+                  "answer_start": 347
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_a_5",
+              "question": "Why is Mount Everest famous among climbers?",
+              "answers": [
+                {
+                  "text": "Because it is the tallest mountain on Earth",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_a_6",
+              "question": "What are some dangers of climbing Everest?",
+              "answers": [
+                {
+                  "text": "Altitude sickness, extreme weather, and avalanches",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_a_7",
+              "question": "What role does Everest play in Nepal\u2019s economy?",
+              "answers": [
+                {
+                  "text": "It contributes significantly to tourism",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_a_8",
+              "question": "What are base camps used for?",
+              "answers": [
+                {
+                  "text": "To support climbers and help them acclimatize",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_a_9",
+              "question": "Which communities hold Everest as culturally significant?",
+              "answers": [
+                {
+                  "text": "Local communities in Nepal and Tibet",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_s_0",
+              "question": "Why do people attempt to climb Everest?",
+              "answers": [
+                {
+                  "text": "It is seen as a major mountaineering achievement",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_s_1",
+              "question": "What is the risk of high altitude on Everest?",
+              "answers": [
+                {
+                  "text": "It can cause altitude sickness",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_s_2",
+              "question": "What helps climbers prepare for the summit?",
+              "answers": [
+                {
+                  "text": "Spending time at base camps",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_s_3",
+              "question": "What makes Everest a symbol of challenge?",
+              "answers": [
+                {
+                  "text": "Its extreme height and difficult conditions",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_s_4",
+              "question": "How does Everest impact Nepal\u2019s tourism?",
+              "answers": [
+                {
+                  "text": "It attracts international climbers",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_s_5",
+              "question": "What mountain range includes Everest?",
+              "answers": [
+                {
+                  "text": "The Himalayas",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_s_6",
+              "question": "What weather conditions are a danger on Everest?",
+              "answers": [
+                {
+                  "text": "Extreme cold and storms",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_s_7",
+              "question": "Who was Tenzing Norgay?",
+              "answers": [
+                {
+                  "text": "A Sherpa who helped first summit Everest",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_s_8",
+              "question": "Why are avalanches a threat on Everest?",
+              "answers": [
+                {
+                  "text": "Because of unstable snow and ice layers",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_s_9",
+              "question": "What does Everest represent to many climbers?",
+              "answers": [
+                {
+                  "text": "A lifelong goal or symbol of accomplishment",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Mount_Everest_Revised_n_0",
+              "question": "What is the subway station at Everest\u2019s summit called?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Mount_Everest_Revised_n_1",
+              "question": "Who delivers pizza to Mount Everest climbers?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Mount_Everest_Revised_n_2",
+              "question": "Which elevator is installed on the north face of Everest?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Mount_Everest_Revised_n_3",
+              "question": "What is the barcode of the Everest base camp?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Mount_Everest_Revised_n_4",
+              "question": "How many drones built the mountain?",
+              "answers": [],
+              "is_impossible": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
