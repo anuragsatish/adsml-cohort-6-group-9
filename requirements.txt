@@ -1,0 +1,11 @@
+streamlit
+torch
+transformers
+sentence-transformers
+scikit-learn
+matplotlib
+seaborn
+pandas
+PyPDF2
+docx2txt
+plotly>=5.0.0

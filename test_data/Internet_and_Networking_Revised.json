@@ -1,0 +1,264 @@
+{
+  "data": [
+    {
+      "title": "Internet_and_Networking_Revised",
+      "paragraphs": [
+        {
+          "context": "The Internet is a global network that connects millions of computers and devices worldwide, enabling the transfer of data and communication. Each device connected to the Internet is assigned a unique IP address, which allows it to be identified on the network. Routers are essential network devices that direct traffic between different networks and ensure data reaches the correct destination. Modems connect a home or business to the Internet service provider. A Local Area Network (LAN) is a group of interconnected computers within a limited area, such as a home, school, or office. The Domain Name System (DNS) translates human-readable domain names (like www.example.com) into IP addresses. Data sent over the Internet is broken into packets and reassembled at the destination. Protocols like HTTP and HTTPS are used to access websites, ensuring structured communication.",
+          "qas": [
+            {
+              "id": "Internet_and_Networking_Revised_a_0",
+              "question": "What is the Internet?",
+              "answers": [
+                {
+                  "text": "A global network connecting computers and devices worldwide",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_a_1",
+              "question": "What is the function of an IP address?",
+              "answers": [
+                {
+                  "text": "To identify a device on the network",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_a_2",
+              "question": "What does a router do?",
+              "answers": [
+                {
+                  "text": "Directs data traffic between networks",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_a_3",
+              "question": "What device connects a home to an Internet provider?",
+              "answers": [
+                {
+                  "text": "Modem",
+                  "answer_start": 395
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_a_4",
+              "question": "What does LAN stand for?",
+              "answers": [
+                {
+                  "text": "Local Area Network",
+                  "answer_start": 465
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_a_5",
+              "question": "What is the role of DNS?",
+              "answers": [
+                {
+                  "text": "It translates domain names into IP addresses",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_a_6",
+              "question": "How is data sent over the Internet?",
+              "answers": [
+                {
+                  "text": "In the form of packets",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_a_7",
+              "question": "What is a domain name?",
+              "answers": [
+                {
+                  "text": "A human-readable address for a website",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_a_8",
+              "question": "Which protocol is used to access websites?",
+              "answers": [
+                {
+                  "text": "HTTP or HTTPS",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_a_9",
+              "question": "Where is a LAN typically used?",
+              "answers": [
+                {
+                  "text": "In homes, schools, or offices",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_s_0",
+              "question": "Why are routers important in networking?",
+              "answers": [
+                {
+                  "text": "They ensure data reaches the correct destination",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_s_1",
+              "question": "What links your home network to the Internet?",
+              "answers": [
+                {
+                  "text": "A modem",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_s_2",
+              "question": "Why is DNS necessary?",
+              "answers": [
+                {
+                  "text": "Because humans use names instead of numeric IPs",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_s_3",
+              "question": "What ensures structured communication over the web?",
+              "answers": [
+                {
+                  "text": "Protocols like HTTP and HTTPS",
+                  "answer_start": 784
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_s_4",
+              "question": "How do devices communicate on the Internet?",
+              "answers": [
+                {
+                  "text": "Through IP addresses and routing",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_s_5",
+              "question": "What makes it possible to view websites?",
+              "answers": [
+                {
+                  "text": "Web protocols and DNS",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_s_6",
+              "question": "How is traffic managed in a network?",
+              "answers": [
+                {
+                  "text": "Using routers and modems",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_s_7",
+              "question": "What helps identify each device online?",
+              "answers": [
+                {
+                  "text": "An IP address",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_s_8",
+              "question": "What do you need to browse websites?",
+              "answers": [
+                {
+                  "text": "A web browser and Internet connection",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_s_9",
+              "question": "Why are packets used in data transfer?",
+              "answers": [
+                {
+                  "text": "To efficiently break and reassemble information",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "Internet_and_Networking_Revised_n_0",
+              "question": "What color is the fastest Wi-Fi signal?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Internet_and_Networking_Revised_n_1",
+              "question": "Which router speaks the most languages?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Internet_and_Networking_Revised_n_2",
+              "question": "How many social media apps live inside a modem?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Internet_and_Networking_Revised_n_3",
+              "question": "What fruit powers the DNS system?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "Internet_and_Networking_Revised_n_4",
+              "question": "Where do websites go when they sleep?",
+              "answers": [],
+              "is_impossible": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

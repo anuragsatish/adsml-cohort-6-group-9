@@ -1,0 +1,5 @@
+context,question,answers,is_impossible
+"The Suez Canal is a man-made waterway in Egypt, connecting the Mediterranean Sea to the Red Sea. It allows ships to travel between Europe and South Asia without navigating around Africa.",What does the Suez Canal connect?,"[{""text"": ""Red Sea"", ""answer_start"": 68}]",False
+"The Suez Canal is a man-made waterway in Egypt, connecting the Mediterranean Sea to the Red Sea. It allows ships to travel between Europe and South Asia without navigating around Africa.",Where can ships go from Europe via this canal?,"[{""text"": ""South Asia"", ""answer_start"": 130}]",False
+"The Suez Canal is a man-made waterway in Egypt, connecting the Mediterranean Sea to the Red Sea. It allows ships to travel between Europe and South Asia without navigating around Africa.",Who discovered the Amazon River?,[],True
+"The Suez Canal is a man-made waterway in Egypt, connecting the Mediterranean Sea to the Red Sea. It allows ships to travel between Europe and South Asia without navigating around Africa.",What is the capital of France mentioned in the text?,[],True

@@ -1,0 +1,265 @@
+{
+  "version": "v2.0",
+  "data": [
+    {
+      "title": "Internet Overview",
+      "paragraphs": [
+        {
+          "context": "The Internet is a global network of interconnected computers that communicate using standardized protocols. It enables access to vast resources including websites, emails, file transfers, and online services. The World Wide Web is a part of the Internet and is made up of websites and web pages linked by hyperlinks and URLs.",
+          "qas": [
+            {
+              "id": "direct-1",
+              "question": "What is the Internet?",
+              "answers": [
+                {
+                  "text": "The Internet is a global network of interconnected computers that communicate using standardized protocols.",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct-2",
+              "question": "What does the Internet enable access to?",
+              "answers": [
+                {
+                  "text": "It enables access to vast resources including websites, emails, file transfers, and online services.",
+                  "answer_start": 108
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct-3",
+              "question": "What protocols are used by the Internet?",
+              "answers": [
+                {
+                  "text": "Standardized protocols.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct-4",
+              "question": "What part of the Internet includes websites and web pages?",
+              "answers": [
+                {
+                  "text": "The World Wide Web.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct-5",
+              "question": "What connects websites and web pages on the Web?",
+              "answers": [
+                {
+                  "text": "Hyperlinks and URLs.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct-6",
+              "question": "What is the World Wide Web made up of?",
+              "answers": [
+                {
+                  "text": "Websites and web pages.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct-7",
+              "question": "What does WWW stand for?",
+              "answers": [
+                {
+                  "text": "World Wide Web.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct-8",
+              "question": "What is a URL?",
+              "answers": [
+                {
+                  "text": "A URL is a reference to a web resource that specifies its location on a computer network.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct-9",
+              "question": "How do web pages link to one another?",
+              "answers": [
+                {
+                  "text": "By using hyperlinks.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "direct-10",
+              "question": "What allows computers to communicate on the Internet?",
+              "answers": [
+                {
+                  "text": "Standardized protocols.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect-1",
+              "question": "Can you describe the function of the Internet?",
+              "answers": [
+                {
+                  "text": "It enables access to vast resources including websites, emails, file transfers, and online services.",
+                  "answer_start": 108
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect-2",
+              "question": "How do devices communicate over the global web?",
+              "answers": [
+                {
+                  "text": "Using standardized protocols.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect-3",
+              "question": "What role does the World Wide Web play in the Internet?",
+              "answers": [
+                {
+                  "text": "It is a part of the Internet and is made up of websites and web pages.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect-4",
+              "question": "What mechanism is used to connect various web pages?",
+              "answers": [
+                {
+                  "text": "Hyperlinks and URLs.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect-5",
+              "question": "In what way is the WWW structured?",
+              "answers": [
+                {
+                  "text": "It is made up of websites and web pages linked by hyperlinks and URLs.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect-6",
+              "question": "What do we use to find web resources?",
+              "answers": [
+                {
+                  "text": "URLs.",
+                  "answer_start": 320
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect-7",
+              "question": "What facilitates browsing between different websites?",
+              "answers": [
+                {
+                  "text": "Hyperlinks.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect-8",
+              "question": "What makes up the content of the Web?",
+              "answers": [
+                {
+                  "text": "Websites and web pages.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect-9",
+              "question": "What technology underpins the Web's structure?",
+              "answers": [
+                {
+                  "text": "Hyperlinks and URLs.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "indirect-10",
+              "question": "What is an example of Internet use?",
+              "answers": [
+                {
+                  "text": "Websites, emails, file transfers, and online services.",
+                  "answer_start": -1
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "id": "noanswer-1",
+              "question": "When was the Internet invented?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "noanswer-2",
+              "question": "Who founded the World Wide Web?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "noanswer-3",
+              "question": "What is the capital of the Internet?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "noanswer-4",
+              "question": "How many countries are connected to the Internet?",
+              "answers": [],
+              "is_impossible": true
+            },
+            {
+              "id": "noanswer-5",
+              "question": "What is the GDP contribution of the Internet?",
+              "answers": [],
+              "is_impossible": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
