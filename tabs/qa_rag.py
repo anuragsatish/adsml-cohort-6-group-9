@@ -28,7 +28,11 @@ def extract_text(uploaded_file):
     else:
         return ""
 
-def chunk_text(text, max_words=200, overlap=50):
+def chunk_text(text, max_words=120, overlap=40):
+    """
+    Split text into smaller overlapping chunks for better retrieval accuracy.
+    New setting: 120 words per chunk, 40-word overlap.
+    """
     import re
     words = re.split(r'\s+', text)
     chunks = []
@@ -84,11 +88,11 @@ def render():
     with st.expander("⚙️ RAG QA Settings", expanded=False):
         selected_model = st.selectbox(
             "Select QA Model",
-            ["qa_model_checkpoint", "models/bert_squad2_deepset", "qa_model_checkpoint_sk", "qa_model_checkpoint_170425"],
+            ["qa_model_checkpoint", "models/bert_squad2_deepset", "qa_model_checkpoint_sk", "qa_model_checkpoint_170425","qa_model_checkpoint_512_290425"],
             index=0
         )
-        st.session_state.threshold = st.selectbox("No-Answer Threshold", [0.2, 0.4, 0.6, 0.8], index=1)
-        st.session_state.confidence_score_threshold = st.selectbox("Confidence Suppression Threshold", [-2.0, -1.0, 0.0], index=1)
+        st.session_state.threshold = st.selectbox("No-Answer Threshold", [0.2, 0.4,0.5, 0.6, 0.8], index=1)
+        st.session_state.confidence_score_threshold = st.selectbox("Confidence Suppression Threshold", [-2.0, -1.0, 0.0,1.0,2.0,3.0,4.0,5.0], index=1)
         st.session_state.max_span_length = st.selectbox("Max Answer Span Length", [15, 30, 50, 80], index=0)
         st.session_state.semantic_similarity_threshold = st.selectbox("Semantic Similarity Threshold", [0.3, 0.4, 0.6, 0.8], index=1)
         st.session_state.enable_semantic_override = st.checkbox("Enable Semantic Override Logic", value=st.session_state.get("enable_semantic_override", True))
@@ -118,6 +122,20 @@ def render():
                     similarities = util.cos_sim(question_embedding, chunk_embeddings)[0]
                     top_k_actual = min(top_k, len(chunks))
                     top_indices = torch.topk(similarities, k=top_k_actual).indices.tolist()
+
+                    # 🔵 Insert Boosting Code Here
+                    question_keywords = set(question.lower().split())
+
+                    boosted_scores = []
+                    for idx in top_indices:
+                        chunk_words = set(chunks[idx].lower().split())
+                        keyword_overlap = len(question_keywords.intersection(chunk_words))
+                        original_score = similarities[idx].item()
+                        boosted_score = original_score + (0.01 * keyword_overlap)
+                        boosted_scores.append((idx, boosted_score))
+
+                    boosted_scores = sorted(boosted_scores, key=lambda x: x[1], reverse=True)
+                    top_indices = [idx for idx, _ in boosted_scores]
 
                     st.markdown("---")
                     st.markdown(f"🔍 **Top {top_k_actual} Retrieved Chunks:**")
@@ -201,50 +219,55 @@ def render():
                         "Suppression Reason": suppression_reason,
                     })
 
-    if st.session_state.rag_qa_results:
-        st.markdown("---")
-        st.subheader("📥 Export QA Results")
-        df_export = pd.DataFrame(st.session_state.rag_qa_results)
-        csv = df_export.to_csv(index=False).encode('utf-8')
-        st.download_button(
-            label="⬇️ Download Results as CSV",
-            data=csv,
-            file_name="RAG_QA_Results.csv",
-            mime="text/csv"
-        )
+    # Show download/export section ONCE after results are appended
+if "rag_qa_results" in st.session_state and st.session_state.rag_qa_results:
+    st.markdown("---")
+    st.subheader("📥 Export QA Results")
 
-        st.markdown("### 📊 Confidence Scores vs. Threshold (Interactive)")
-        df_plot = pd.DataFrame(st.session_state.rag_qa_results)
-        threshold = st.session_state.get("confidence_score_threshold", -1.0)
+    df_export = pd.DataFrame(st.session_state.rag_qa_results)
+    csv_data = df_export.to_csv(index=False).encode("utf-8")
 
-        fig = go.Figure()
-        fig.add_trace(go.Scatter(
-            y=df_plot["Confidence Score"],
-            x=list(range(1, len(df_plot) + 1)),
-            mode="lines+markers",
-            name="Confidence Score",
-            marker=dict(color="blue"),
-            hovertext=df_plot["Question"]
-        ))
-        fig.add_trace(go.Scatter(
-            x=[0, len(df_plot)],
-            y=[threshold, threshold],
-            mode="lines",
-            name=f"Threshold ({threshold})",
-            line=dict(color="red", dash="dash")
-        ))
-        fig.update_layout(
-            title="Model Confidence per Prediction",
-            xaxis_title="Prediction Index",
-            yaxis_title="Confidence Score",
-            legend=dict(x=0, y=1),
-            height=400,
-            template="plotly_white"
-        )
-        st.plotly_chart(fig, use_container_width=True)
-
-        if st.button("🗑 Clear History"):
-            st.session_state.rag_qa_results.clear()
-            st.success("✅ History cleared. You can start fresh.")
+    st.download_button(
+        label="⬇️ Download Results as CSV",
+        data=csv_data,
+        file_name="RAG_QA_Results.csv",
+        mime="text/csv",
+        key="csv_download_once"  # important to prevent Streamlit re-adding button
+    )
 
 
+    # Plot Confidence Score
+    st.markdown("### 📊 Confidence Scores vs. Threshold (Interactive)")
+    df_plot = pd.DataFrame(st.session_state.rag_qa_results)
+    threshold = st.session_state.get("confidence_score_threshold", -1.0)
+
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        y=df_plot["Confidence Score"],
+        x=list(range(1, len(df_plot) + 1)),
+        mode="lines+markers",
+        name="Confidence Score",
+        marker=dict(color="blue"),
+        hovertext=df_plot["Question"]
+    ))
+    fig.add_trace(go.Scatter(
+        x=[0, len(df_plot)],
+        y=[threshold, threshold],
+        mode="lines",
+        name=f"Threshold ({threshold})",
+        line=dict(color="red", dash="dash")
+    ))
+    fig.update_layout(
+        title="Model Confidence per Prediction",
+        xaxis_title="Prediction Index",
+        yaxis_title="Confidence Score",
+        legend=dict(x=0, y=1),
+        height=400,
+        template="plotly_white"
+    )
+    st.plotly_chart(fig, use_container_width=True)
+
+    # Clear history
+    if st.button("🗑 Clear History"):
+        st.session_state.rag_qa_results.clear()
+        st.success("✅ History cleared. You can start fresh.")

@@ -92,38 +92,96 @@ def predict_answer(model, tokenizer, question, context, threshold, max_span_leng
             "highlight_start": start_char,
             "highlight_end": end_char
         }
+def parse_docx_for_qa(file):
+    import docx
+    doc = docx.Document(file)
 
+    qa_list = []
+    context = ""
+    question = ""
+    ground_truth = ""
+
+    # Read paragraph by paragraph
+    for para in doc.paragraphs:
+        text = para.text.strip()
+
+        if text.lower().startswith("context:"):
+            context = text[8:].strip()
+
+        elif text.lower().startswith("question:"):
+            question = text[9:].strip()
+
+        elif text.lower().startswith("ground truth:"):
+            ground_truth = text[13:].strip()
+
+            # After finding a full QA pair, add to list
+            qa_list.append({
+                "context": context,
+                "question": question,
+                "ground_truth": ground_truth
+            })
+
+            # Reset question and ground truth for next entry
+            question = ""
+            ground_truth = ""
+
+    return qa_list
 # Render function
 def render():
     st.subheader("Context+QA")
 
-    st.session_state.context = st.text_area("📜 Context", value=st.session_state.get("context", ""), height=200)
-    st.session_state.question = st.text_input("❓ Question", value=st.session_state.get("question", ""))
-    st.session_state.ground_truth = st.text_input("✅ (Optional) Ground Truth Answer", value=st.session_state.get("ground_truth", ""))
+    uploaded_file = st.file_uploader("📂 Upload Word Document (Multiple QA Pairs)", type=["docx"])
 
+    qa_list = []
+    selected_qa = {}
+
+    # Step 1: Extract all QA pairs from the uploaded file
+    if uploaded_file:
+        qa_list = parse_docx_for_qa(uploaded_file)
+
+        if qa_list:
+            question_options = [f"Q{idx+1}: {qa['question'][:60]}..." for idx, qa in enumerate(qa_list)]
+            selected_index = st.selectbox("Select a question to load", range(len(question_options)), format_func=lambda x: question_options[x])
+
+            selected_qa = qa_list[selected_index]
+
+            st.session_state.context = selected_qa["context"]
+            st.session_state.question = selected_qa["question"]
+            st.session_state.ground_truth = selected_qa["ground_truth"]
+
+    # If no file or QA selected, fallback to last session values or empty
+    context_text = st.session_state.get("context", "")
+    question_text = st.session_state.get("question", "")
+    gt_text = st.session_state.get("ground_truth", "")
+
+    # Step 2: Input fields (auto-filled or manual)
+    st.session_state.context = st.text_area("📜 Context", value=context_text, height=200)
+    st.session_state.question = st.text_input("❓ Question", value=question_text)
+    st.session_state.ground_truth = st.text_input("✅ (Optional) Ground Truth Answer", value=gt_text)
+
+    # Step 3: Token length check
     if st.session_state.context:
         token_len = len(AutoTokenizer.from_pretrained("bert-base-uncased")(st.session_state.context)["input_ids"])
         st.caption(f"📏 Tokenized context length: {token_len} tokens")
         if token_len > 512:
             st.warning("⚠️ Your context will be truncated to 512 tokens.")
 
+    # Step 4: Settings block
     with st.expander("⚙️ Settings (Click to show/hide)", expanded=False):
         no_ans = st.selectbox("No-Answer Threshold", [0.1,0.2,0.3, 0.4,0.5, 0.6,0.7,0.8,0.9,1.0], index=4)
-        conf_thresh = st.selectbox("Confidence Suppression Threshold", [-2.0, -1.0, 0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8,0,9.0,10.0], index=1)
+        conf_thresh = st.selectbox("Confidence Suppression Threshold", [-2.0, -1.0, 0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0], index=1)
         span_len = st.selectbox("Max Answer Span Length", [15, 30, 50, 80], index=0)
         sim_thresh = st.selectbox("Semantic Similarity Threshold", [0.3, 0.4, 0.6, 0.8], index=1)
         override = st.checkbox("Enable Semantic Override", value=True)
         selected_model = st.selectbox(
-        "Select QA Model",
-        ["qa_model_checkpoint", "models/bert_squad2_deepset", "qa_model_checkpoint_sk", "qa_model_checkpoint_170425"],
-        index=0
+            "Select QA Model",
+            ["qa_model_checkpoint", "models/bert_squad2_deepset", "qa_model_checkpoint_sk", "qa_model_checkpoint_170425","qa_model_checkpoint_512_290425"],
+            index=0
         )
-
         hybrid_mode = st.checkbox(
             "Use Hybrid No-Answer Mode (Auto-switch to SQuAD2)",
             value=False
-            )
-
+        )
 
         settings = {
             "no_answer_threshold": no_ans,
@@ -135,12 +193,11 @@ def render():
             "use_squad2_for_no_answer_only": hybrid_mode
         }
 
+    result = None
+    sim_score = None
 
-        result = None
-        sim_score = None
-        note = ""
-
-    if st.button("🔎 Submit") and st.session_state.context and st.session_state.question:
+    # Step 5: Run prediction when button is clicked
+    if st.button("🔎 Predict Answer") and st.session_state.context and st.session_state.question:
         question_lower = st.session_state.question.lower()
         no_answer_keywords = ["invented", "founded", "depth", "where is", "who created", "not mentioned", "panama canal", "located in", "never", "does not exist"]
 
@@ -172,6 +229,7 @@ def render():
             result["confidence_score"]
         )
 
+        # Step 6: Display results
         if result:
             st.markdown("---")
             st.markdown("### 🧠 Final Answer")
@@ -185,16 +243,16 @@ def render():
             if sim_score is not None:
                 st.markdown(f"- **Semantic Similarity Score:** `{sim_score:.3f}`")
 
-            st.markdown("### 🔬 Debug Info")
-            st.json({
-                "Predicted Answer": result['answer'],
-                "Raw Confidence Score": result['confidence_score'],
-                "No-Answer Probability": result['na_probability'],
-                "Start Index": result['highlight_start'],
-                "End Index": result['highlight_end'],
-                "Status": result.get("status", "n/a"),
-                "Applied Settings": settings
-            })
+            with st.expander("🔬 Debug Info", expanded=False):
+                st.json({
+                    "Predicted Answer": result['answer'],
+                    "Raw Confidence Score": result['confidence_score'],
+                    "No-Answer Probability": result['na_probability'],
+                    "Start Index": result['highlight_start'],
+                    "End Index": result['highlight_end'],
+                    "Status": result.get("status", "n/a"),
+                    "Applied Settings": settings
+                })
 
             st.subheader("🧠 Highlighted Context")
             start, end = result["highlight_start"], result["highlight_end"]
