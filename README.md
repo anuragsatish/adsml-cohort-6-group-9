@@ -1,26 +1,12 @@
-# adsml-cohort-6-group-9
-#### How to clone, commit code to the repo
+# Automated Textual Response System using Deep Neural Networks(QA)
 
-- Clone the repo
-> *git clone https://github.com/anuragsatish/adsml-cohort-6-group-9.git*
+Abstract: Find answer to the question from the given context(paragraph). 
 
-- Create a private branch before merging to main branch
+Using pre-trained BERT transformer `bert-based-uncased`, we've fine tuned it for question and answering system, using SQuAD-v2 dataset.
 
-```
-Example: git checkout -b add-learning-rate
-```
+The model built, takes input in form of a simple plain-text, json and also pdf document.
+  - UI for this implementation has been built using streamlit
 
-
-- Create a new file or make changes to existing files in repo
-- Push changes made to the private branch
-```
-git add filename.py
-git commit -m 'Added changes for learning rate
-git push -u origin add-learning-rate
-```
-
-
-- Ask team members to review your changes and then ask admin to merge them to main branch
 
 
 
